@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Link para icones da página -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Representa o link do estilo da página -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!--Vai representar o container que envolve todo o meu login-->
+  <div id="login-container">
+    <form action="">
+      <!--Formulário de login e senha -->
+      <h1>Login</h1>
+      <!-- Lembrete para o usuário. o type serve pra fazer validação -->
+      <!-- O name serve pra fazer validação no banco de dados -->
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Digite seu e-email" autocomplete="off">
+      <!-- autocomplete="off" diz que o campo não tem o autocompletar -->
+      <label for="password">Senha</label>
+      <input type="password" name="password" id="password" placeholder="Digite sua senha">
+      <!-- Link pra caso o usuário tenha esquecido a senha -->
+      <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+      <!-- Faz o envio da ação do formulário -->
+      <input type="submit" value="Login">
+    </form>
+
+    <!--Redes Sociais -->
+    <div id="social-container">
+      <p>Se preferir, acesse pelas redes sociais</p>
+      <!-- Icones -->
+      <i class="fa fa-facebook-f"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <!--Registrar -->
+    <div id="register-container">
+      <p>Ainda não tem uma conta?</p>
+      <a href="#">Registrar</a>
+    </div>
+  </div>
+</body>
+
+</html>
