@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Como tô trabalhando com INPUT preciso a largura dos elementos pai */
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: rgb(37, 37, 141);
+    /* Sentraliza o meu container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Tamanho padrão pro usuário */
+    min-height: 100vh;
+    color: white
+}
+
+.hide {
+    /* Quando uso o !importante digo pra funcionar independente da regra que tenha o elemento */
+    display: none !important;
+}
+
+.container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #1d1e33;
+    padding: 2rem;
+}
+
+/* IMC Form */
+#calc-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-inputs {
+    display: flex;
+    /* Separado por coluna */
+    flex-direction: column;
+    /* Espaça os elementos igualmente */
+    justify-content: space-between;
+}
+
+.form-control {
+    display: flex;
+    /* Separado por coluna */
+    flex-direction: column;
+    /* Largura Máxima */
+    flex: 1;
+    margin-bottom: 1rem;
+
+}
+
+.form-control label {
+    font-weight: bold;
+    /* Afastar a label do input */
+    margin-bottom: 0.6rem;
+    /* Cor */
+    color: white;
+}
+
+.form-control input {
+    padding: 1rem 0.5rem;
+}
+
+.action-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    /* Distância/margem entre os botões */
+    gap: 1rem;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: rgb(211, 37, 37);
+    border: none;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover {
+    /* Quando passar o mouse por cima do botão a cor vai ser um pouco mudada */
+    opacity: 1;
+}
+
+#clear-btn {
+    background-color: #444;
+}
+
+/* Result Container */
+#result-container {
+    /* Texto alinhado ao centro */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info {
+    /* Aumento a fonte */
+    font-size: 1.4rem;
+    color: white;
+}
+
+#result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+}
+
+/* Afastar a tabela dos outros */
+.imc-table {
+    margin: 1.5rem;
+    font-size: 0.8rem;
+}
+
+#imc-table {
+    margin: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.table-header {
+    font-weight: bold;
+    color: #ccc;
+
+}
+
+.table-header,
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 1px solid #444;
+}
+
+.table-header h4,
+.table-data p {
+    flex: 1
+}
+
+.table-header h4:nth-child(3),
+.table-header p:nth-child(3) {
+    max-width: 80px;
+}
+
+#back-btn {
+    align-self: center;
+}
+
+.good {
+    color: green
+}
+
+.medium {
+    color: #dbec12
+}
+
+.low {
+    color: #db6212
+}
+
+.high {
+    color: red
+}
